@@ -11,6 +11,7 @@ import lombok.Setter;
 @Getter
 @Component
 @EnableRetry
+
 @ConfigurationProperties(prefix="config-consumer-service")
 public class Configuration {
 

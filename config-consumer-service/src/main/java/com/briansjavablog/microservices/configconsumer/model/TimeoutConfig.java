@@ -7,6 +7,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
+
 public class TimeoutConfig {
 
 	private int connectionTimeoutMillis;
