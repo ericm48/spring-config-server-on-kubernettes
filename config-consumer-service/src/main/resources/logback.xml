@@ -17,10 +17,14 @@
         <appender-ref ref="FILE" />
     </appender>
 
-    <logger name="org.springframework.retry" level="DEBUG" />
-    <logger name="org.springframework.web" level="DEBUG" />
+    <logger name="org.springframework.retry" level="DEBUG" />    
+    <logger name="com.briansjavablog" level="DEBUG" />
 
-    <root level="DEBUG">
+    <!--
+    <logger name="org.springframework.web" level="DEBUG" />
+    -->
+
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="ASYNC" />
     </root>

@@ -6,7 +6,8 @@ spring:
       server:
         git:
           # URI of GIT repo containing properties
-          uri: https://github.com/briansjavablog/spring-config-server-on-kubernettes
+          uri: https://github.com/ericm48/spring-config-server-on-kubernettes
+          #uri: https://github.com/briansjavablog/spring-config-server-on-kubernettes
           default-label: main
           search-paths: configuration
 server:

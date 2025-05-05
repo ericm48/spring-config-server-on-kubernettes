@@ -18,12 +18,22 @@ public class ConfigConsumerController {
 	@GetMapping("/timeout-config")
 	public ResponseEntity<TimeoutConfig> getTimeoutConfiguration(){
 
+		ResponseEntity<TimeoutConfig> returnValue = null;
+
+		log.debug("ConfigConsumerController.getTimeoutConfiguration() Begins...");
+
 		TimeoutConfig timeoutConfig = new TimeoutConfig();
 		timeoutConfig.setConnectionTimeoutMillis(configuration.getConnectionTimeoutMillis());
 		timeoutConfig.setReadTimeoutMillis(configuration.getReadTimeoutMillis());
 
-		log.info("retrieving TimeoutConfig [{}]", timeoutConfig);
-		
-		return ResponseEntity.ok(timeoutConfig);
+		log.info("Retrieving TimeoutConfig [{}]", timeoutConfig);
+
+		returnValue = ResponseEntity.ok(timeoutConfig);
+
+		log.debug("ConfigConsumerController.getTimeoutConfiguration() returnValue: " + returnValue);		
+
+		log.debug("ConfigConsumerController.getTimeoutConfiguration() Ends...");		
+
+		return (returnValue);
 	}
 }

@@ -1,8 +1,8 @@
 # Spring Config Server on Kubernetes
 # Documentation
 This code is explained in detail, in a 2 part article
-- part 1 - https://www.briansdevblog.com/2021/04/spring-cloud-config-server-on-kubernetes-part-1/
-- part 2 - https://www.briansdevblog.com/2021/04/spring-cloud-config-server-on-kubernetes-part-2/
+- part 1 - https://dzone.com/articles/spring-cloud-config-server-on-kubernetes-part-1
+- part 2 - MIA
 
 Clone the repository with 
 ```
