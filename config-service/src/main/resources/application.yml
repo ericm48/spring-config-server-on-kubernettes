@@ -10,7 +10,6 @@ spring:
           search-locations:
           - /tmp/config-server-fileshare
 
-
 #        git:
 #          # URI of GIT repo containing properties
 #          uri: https://github.com/ericm48/spring-config-server-on-kubernettes          

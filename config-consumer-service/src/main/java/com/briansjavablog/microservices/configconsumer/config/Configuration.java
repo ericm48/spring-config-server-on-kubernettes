@@ -17,4 +17,11 @@ public class Configuration {
 
 	private Integer connectionTimeoutMillis;
 	private Integer readTimeoutMillis;
+
+// Convenience 4 now..
+	public Configuration()
+	{
+		this.setConnectionTimeoutMillis(22);
+		this.setReadTimeoutMillis(22);
+	}	
 }

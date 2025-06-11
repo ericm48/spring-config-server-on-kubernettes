@@ -8,8 +8,10 @@ import lombok.ToString;
 @Getter
 @Setter
 
-public class TimeoutConfig {
+public class TimeoutConfig 
+{
 
 	private int connectionTimeoutMillis;
 	private int readTimeoutMillis;
+
 }
