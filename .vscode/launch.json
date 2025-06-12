@@ -15,15 +15,15 @@
             "type": "java",
             "name": "ConfigConsumerServiceApplication",
             "request": "launch",
-            "mainClass": "com.briansjavablog.microservices.configconsumer.ConfigConsumerServiceApplication",
+            "mainClass": "com.eric.microservices.configconsumer.ConsumerServiceApplication",
             "projectName": "config-consumer-service"
         },
         {
             "type": "java",
             "name": "ConfigServerApplication",
             "request": "launch",
-            "mainClass": "com.briansjavablog.microservices.configserver.ConfigServerApplication",
-            "projectName": "config-server"
+            "mainClass": "com.eric.microservices.configserver.ConsumerServiceApplication",
+            "projectName": "config-server-service"
         }
     ]
 }

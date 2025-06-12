@@ -1,4 +1,4 @@
-package com.briansjavablog.microservices.configconsumer.model;
+package com.eric.microservices.configconsumer.model;
 
 import lombok.Getter;
 import lombok.Setter;

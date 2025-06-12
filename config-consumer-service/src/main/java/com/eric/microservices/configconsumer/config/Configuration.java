@@ -1,4 +1,4 @@
-package com.briansjavablog.microservices.configconsumer.config;
+package com.eric.microservices.configconsumer.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.retry.annotation.EnableRetry;

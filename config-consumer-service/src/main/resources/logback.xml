@@ -18,7 +18,7 @@
     </appender>
 
     <logger name="org.springframework.retry" level="DEBUG" />    
-    <logger name="com.briansjavablog" level="DEBUG" />
+    <logger name="com.eric" level="DEBUG" />
 
     <!--
     <logger name="org.springframework.web" level="DEBUG" />

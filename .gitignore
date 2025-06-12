@@ -1,3 +1,11 @@
+#
+# gitignore
+#
+
+# MAC Crap
+
+**/.DS_Store
+
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 logs/

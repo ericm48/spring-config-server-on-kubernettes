@@ -1,21 +1,22 @@
-package com.briansjavablog.microservices.configconsumer.rest;
+package com.eric.microservices.configconsumer.service;
 
-import com.briansjavablog.microservices.configconsumer.config.Configuration;
-import com.briansjavablog.microservices.configconsumer.model.TimeoutConfig;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.eric.microservices.configconsumer.config.Configuration;
+import com.eric.microservices.configconsumer.model.TimeoutConfig;
+
 @Slf4j
 @RestController
 @AllArgsConstructor
-public class ConfigConsumerController {
+public class ConsumerServiceController {
 
 	private Configuration configuration;
 
-	@GetMapping("/timeout-config")
+	@GetMapping("/get-config/timeout")
 	public ResponseEntity<TimeoutConfig> getTimeoutConfiguration(){
 
 		ResponseEntity<TimeoutConfig> returnValue = null;

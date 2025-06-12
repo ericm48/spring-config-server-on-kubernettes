@@ -1,4 +1,4 @@
-package com.briansjavablog.microservices.configserver;
+package com.eric.microservices.configserverservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @EnableConfigServer
 @RefreshScope
 @SpringBootApplication
-public class ConfigServerApplication {
+public class ConfigServerServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigServerApplication.class, args);
+		SpringApplication.run(ConfigServerServiceApplication.class, args);
 	}
 }

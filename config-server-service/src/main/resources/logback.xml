@@ -7,7 +7,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>logs/config-service.log</file>
+        <file>logs/config-server-service.log</file>
         <encoder>
            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg %n</pattern>
         </encoder>
@@ -22,7 +22,7 @@
     <logger name="org.springframework.cloud.config.server.environment" level="DEBUG" />
     -->
 
-    <logger name="com.briansjavablog" level="DEBUG" />
+    <logger name="com.eric" level="DEBUG" />
 
     <root level="INFO">
         <appender-ref ref="CONSOLE" />

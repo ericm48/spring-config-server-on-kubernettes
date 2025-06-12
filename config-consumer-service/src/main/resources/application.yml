@@ -1,3 +1,10 @@
+#
+# application.yaml
+#
+spring:
+  application:
+    name: config-consumer-service
+
 server:
   port: 8080
 management:

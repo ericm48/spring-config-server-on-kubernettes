@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-server
+    name: config-server-service
   profiles:
     active: native    
   cloud:
@@ -8,7 +8,8 @@ spring:
       server:
         native:
           search-locations:
-          - /tmp/config-server-fileshare
+          - /mnt/k8svolumes/data/configs
+          #- /tmp/config-server-fileshare
 
 #        git:
 #          # URI of GIT repo containing properties
