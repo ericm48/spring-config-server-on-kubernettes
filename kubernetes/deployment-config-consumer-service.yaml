@@ -16,33 +16,34 @@ spec:
     spec:
       containers:
         - name: config-consumer-service
-          image: ericm24/config-consumer-service:k8
+          image: ericm24/config-consumer-service:k8.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: /actuator/health
-              port: 8080
-            initialDelaySeconds: 60
-            timeoutSeconds: 2
-            periodSeconds: 3
-            failureThreshold: 2
-          livenessProbe:
-            httpGet:
-              path: /actuator/health
-              port: 8080
-            initialDelaySeconds: 70
-            timeoutSeconds: 2
-            periodSeconds: 8
-            failureThreshold: 2
+#          readinessProbe:
+#            httpGet:
+#              path: /actuator/health
+#              port: 8080
+#            initialDelaySeconds: 60
+#            timeoutSeconds: 2
+#            periodSeconds: 3
+#            failureThreshold: 2
+#          livenessProbe:
+#            httpGet:
+#              path: /actuator/health
+#              port: 8080
+#            initialDelaySeconds: 70
+#            timeoutSeconds: 2
+#            periodSeconds: 8
+#            failureThreshold: 2
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: config-service-consumer-lb
+  name: config-service-consumer
 spec:
-  type: LoadBalancer
+  type: ClusterIP
+  #type: LoadBalancer
   selector:
     app: config-consumer-service
   ports:

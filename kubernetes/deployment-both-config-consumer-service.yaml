@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: config-service
-          image: ericm24/config-service:k8
+          image: ericm24/config-service:k8.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8888
@@ -67,7 +67,7 @@ spec:
     spec:
       containers:
         - name: config-consumer-service
-          image: ericm24/config-consumer-service:k8
+          image: ericm24/config-consumer-service:k8.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
