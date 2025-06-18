@@ -16,10 +16,18 @@ spec:
     spec:
       containers:
         - name: config-consumer-service
-          image: ericm24/config-consumer-service:k8.1
+          image: ericm24/config-consumer-service:0.0.5-SNAPSHOT #ericm24/config-consumer-service:k8.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          env:
+            - name: LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_BEANS                
+              value: DEBUG                
+          volumeMounts:
+          - name: empty-log-volume
+            mountPath: "/workspace/logs"
+
+
 #          readinessProbe:
 #            httpGet:
 #              path: /actuator/health
@@ -36,6 +44,10 @@ spec:
 #            timeoutSeconds: 2
 #            periodSeconds: 8
 #            failureThreshold: 2
+      volumes:
+      - name: empty-log-volume
+        emptyDir: {}          
+
 ---
 apiVersion: v1
 kind: Service
