@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: config-consumer-service
-          image: ericm24/config-consumer-service:0.0.5-SNAPSHOT #ericm24/config-consumer-service:k8.1
+          image: ericm24/config-consumer-service:0.0.7-SNAPSHOT
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
