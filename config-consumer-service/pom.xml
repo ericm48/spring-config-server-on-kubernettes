@@ -11,12 +11,15 @@
 	<parent>
 		<groupId>com.eric.common</groupId>		
 		<artifactId>eric-spring-boot-starter-parent</artifactId>
-		<version>1.0.2-RELEASE</version>
+		<version>1.0.4-RELEASE</version>
 		<relativePath /> 
 	</parent>
 
 
 	<properties>
+		<!--  spring-cloud version BS..
+		<spring-cloud.version>2024.0.0</spring-cloud.version>
+		-->
 
 	</properties>
 
@@ -32,12 +35,13 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
-			<optional>true</optional>
+
+			<version>${spring-cloud-starter.version}</version>
+			<!--
+			<version>${spring-boot-starter.version}</version>
+			-->
+
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.retry</groupId>
@@ -50,13 +54,29 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+
+			<version>${spring-cloud-starter.version}</version>
+			<!--
+			<version>${spring-boot-starter.version}</version>
+			-->
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+			<optional>true</optional>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>${spring-boot-starter.version}</version>			
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
